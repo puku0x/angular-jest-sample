@@ -5,7 +5,7 @@ module.exports = {
   setupFilesAfterEnv: ['<rootDir>/src/setup-jest.ts'],
   moduleNameMapper: {
     '@app/(.*)': '<rootDir>/src/app/$1',
-    '@env': '<rootDir>/src/environments/environment'
+    '@env/(.*)': '<rootDir>/src/environments/$1'
   },
   transformIgnorePatterns: ['node_modules/(?!(@ngrx|jest-test))']
 };
